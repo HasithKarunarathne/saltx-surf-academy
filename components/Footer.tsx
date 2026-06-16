@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <div className="mb-6 flex items-center gap-3">
               <Image 
-                src="/logosurf.png" 
+                src="/saltx.png" 
                 alt="Saltx Surf Academy" 
                 width={32} 
                 height={32} 

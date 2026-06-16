@@ -157,6 +157,60 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* EXCLUSIVE PROMO BANNER SECTION */}
+      <section className="relative z-10 mx-auto w-full max-w-[100rem] px-5 py-16 sm:px-6 lg:px-12">
+        <div className="group relative flex min-h-[400px] w-full items-center overflow-hidden bg-[#050505] md:min-h-[500px]">
+          
+          {/* Background Image Setup */}
+          <div className="absolute inset-0 z-0">
+            {/* Note: public folder එකට 'promo-surf.jpg' කියලා පින්තූරයක් දාගන්න. නැත්නම් 'hero-surf.jpg' ම පාවිච්චි කරන්න. */}
+            <Image 
+              src="/promo-surf.jpg" 
+              alt="Exclusive Surf Retreat" 
+              fill 
+              className="object-cover object-center grayscale transition-transform duration-[10000ms] ease-out group-hover:scale-105" 
+            />
+            {/* Complex Gradients for text readability (Dark on right side for desktop, bottom for mobile) */}
+            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent md:bg-gradient-to-l md:from-black/90 md:via-black/70 md:to-transparent" />
+          </div>
+
+          {/* Banner Content (Right aligned on desktop, bottom aligned on mobile) */}
+          <div className="relative z-10 flex w-full flex-col items-start px-8 pt-32 md:items-end md:px-16 md:pt-0 md:text-right lg:px-24">
+            
+            <span className="mb-4 flex items-center gap-3 text-[0.65rem] uppercase tracking-[0.4em] text-[#8a7d5b]">
+              <span className="hidden h-[1px] w-8 bg-[#8a7d5b] md:block"></span>
+              Limited Availability
+            </span>
+            
+            <h2 style={{ fontFamily: "var(--font-syne)" }} className="mb-6 max-w-2xl text-4xl font-extrabold uppercase leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
+              Exclusive <br />
+              <span className="text-[#8a7d5b]">Surf & Stay</span> <br />
+              Retreats
+            </h2>
+            
+            <p className="mb-8 max-w-md text-sm font-light leading-relaxed text-zinc-300">
+              Immerse yourself in the ultimate surfing lifestyle. Premium accommodation, daily guided coaching, and professional video analysis to elevate your craft.
+            </p>
+            
+            <Link
+              href="/rates"
+              className="group/btn relative overflow-hidden border border-[#8a7d5b] bg-transparent px-8 py-4 text-[0.7rem] font-bold uppercase tracking-[0.2em] text-[#8a7d5b] transition-all hover:border-[#8a7d5b] hover:text-white"
+            >
+              <span className="absolute inset-0 -translate-x-full bg-[#8a7d5b] transition-transform duration-500 ease-out group-hover/btn:translate-x-0" />
+              <span className="relative z-10 flex items-center gap-3">
+                Discover Retreats
+                <svg className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
      {/* FEATURED PACKAGES TEASER */}
       <section className="relative z-10 mx-auto max-w-7xl px-5 py-16 sm:px-6 md:py-24 lg:px-12">
         {/* Section Header */}

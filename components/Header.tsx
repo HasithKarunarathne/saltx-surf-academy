@@ -37,17 +37,17 @@ export default function Header() {
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 md:px-6 lg:px-12">
         
-        {/* Logo */}
+      {/* Logo */}
         <Link href="/" className="group relative z-50 flex items-center gap-3 md:gap-4">
           <Image
             src="/logosurf.png"
             alt="Saltx Logo"
-            width={36}
-            height={36}
-            className="h-7 w-7 object-contain opacity-90 transition-transform duration-500 group-hover:scale-110 md:h-9 md:w-9 grayscale"
+            width={64} 
+            height={64}
+            className="h-10 w-10 object-contain opacity-90 transition-transform duration-500 group-hover:scale-110 md:h-14 md:w-14 grayscale"
             priority
           />
-          <span style={{ fontFamily: "var(--font-syne)" }} className="text-lg font-bold tracking-[0.3em] text-white md:text-xl">
+          <span style={{ fontFamily: "var(--font-syne)" }} className="text-xl font-bold tracking-[0.3em] text-white md:text-2xl">
             SALTX
           </span>
         </Link>

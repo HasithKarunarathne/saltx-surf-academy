@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import SplashScreen from "@/components/SplashScreen";
 
 const syne = Syne({ subsets: ["latin"], display: "swap", variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${syne.variable} font-sans relative min-h-screen overflow-x-hidden bg-black text-zinc-200 selection:bg-[#8a7d5b] selection:text-white`}>
+       <SplashScreen />
         {/* Global Background Gradients */}
         <div className="pointer-events-none fixed inset-0 z-0">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(138,125,91,0.15),_transparent_70%)] md:bg-[radial-gradient(circle_at_top,_rgba(138,125,91,0.15),_transparent_50%)]" />

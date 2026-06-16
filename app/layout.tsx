@@ -3,6 +3,7 @@ import { Syne, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const syne = Syne({ subsets: ["latin"], display: "swap", variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
